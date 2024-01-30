@@ -1,0 +1,4 @@
+<p>Title: {{ itemTitle }}</p>
+
+<button type="submit" (click)="completeTask()" [disabled]="isCompleted">Complete</button>
+<button type="submit" [disabled]="!isCompleted">Archive</button>
